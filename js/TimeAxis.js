@@ -21,7 +21,7 @@
 			                	'</div>' +
 			                ' </div>' +
 
-			                '<div class="center"></br></br></br></br></br>' +
+			                '<div class="center">' +
 			                ' </div>' +
                 		'</li>');
             	return pointTime;
