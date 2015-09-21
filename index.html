@@ -9,58 +9,34 @@
 </head>
 
 <body>
-	<div id="timeAxis">
-    <ul>
-        <li>
-        	<div class="time">
-        		<div class="icon">15</div>
-        		<div class="desc">
-					<div class="title">2015-10-22</div>
-					<div class="desc-center">Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,。</div>
-        		</div>
-        	</div>
-
-        	<div class="center">
-        		
-        		Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 Redis一样对待。Codis底层会处理请求的转发、不停机的数据迁移等工作, 所有底层的一切处理, 对于客户端来说是透明的。总之，可以简单的认为后台连接的是一个内存无限大的Redis服务。Codis遵循MIT开源协议发布，更多关于Codis的信息请登录其在GitHub的主页查看。Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 Redis一样对待。Codis底层会处理请求的转发、不停机的数据迁移等工作, 所有底层的一切处理, 对于客户端来说是透明的。总之，可以简单的认为后台连接的是一个内存无限大的Re
-
-        	</div>
-        </li>
-
-        <li>
-        	<div class="time">
-        		<div class="icon">15</div>
-        		<div class="desc">
-					<div class="title">2015-10-22</div>
-					<div class="desc-center">Codis是豌豆荚使用Go和C语言开发、</div>
-        		</div>
-        	</div>
-
-        	<div class="center">
-        		
-        		Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 Redis一样对待。Codis底层会处理请求的转发、不停机的数据迁移等工作, 所有底层的一切处理, 对于客户端来说是透明的。总之，可以简单的认为后台连接的是一个内存无限大的Redis服务。Codis遵循MIT开源协议发布，更多关于Codis的信息请登录其在GitHub的主页查看。Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 
-        		
-
-        	</div>
-        </li>
-
-        <li>
-        	<div class="time">
-        		<div class="icon">15</div>
-        		<div class="desc">
-					<div class="title">2015-10-22</div>
-					<div class="desc-center">Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis </div>
-        		</div>
-        	</div>
-
-        	<div class="center">
-        		
-        		Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 Redis一样对待。Codis底层会处理请求的转发、不停机的数据迁移等工作, 所有底层的一切处理, 对于客户端来说是透明的。总之，可以简单的认为后台连接的是一个内存无限大的Redis服务。Codis遵循MIT开源协议发布，更多关于Codis的信息请登录其在GitHub的主页查看。Codis是豌豆荚使用Go和C语言开发、以代理的方式实现的一个Redis分布式集群解决方案,且完全兼容Twemproxy。Twemproxy对于上一层的应用来说, 连接Codis Proxy（Redis代理服务）和连接原生的Redis服务器没有明显的区别,上一层应用能够像使用单机的 
-
-        	</div>
-        </li>
-    </ul>
-    </div>
+   <!--  <div id="timeAxis">
+       <ul>
+           <li>
+               <div class="time">
+                   <div class="icon"></div>
+                   <div class="desc">
+                       <div class="title"></div>
+                       <div class="desc-center"></div>
+                   </div>
+               </div>
+               <div class="center">
+               </div>
+           </li>
+       </ul>
+   </div> -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/TimeAxis.js"></script>
+    <script>
+    var data = [
+                            {"icon":"10","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
+                            {"icon":"11","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
+                            {"icon":"12","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
+                            {"icon":"13","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
+                            {"icon":"14","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]}
+                        ];
+    var timeAxis = new TimeAxis();
+    timeAxis.setPointTime(data);
+    </script>
 </body>
 
 </html>
