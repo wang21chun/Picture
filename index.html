@@ -9,33 +9,33 @@
 </head>
 
 <body>
-   <!--  <div id="timeAxis">
-       <ul>
-           <li>
-               <div class="time">
-                   <div class="icon"></div>
-                   <div class="desc">
-                       <div class="title"></div>
-                       <div class="desc-center"></div>
-                   </div>
-               </div>
-               <div class="center">
-               </div>
-           </li>
-       </ul>
-   </div> -->
+<!--   <div id="timeAxis">
+    <ul>
+        <li>
+            <div class="time">
+                <div class="icon"></div>
+                <div class="desc">
+                    <div class="title"></div>
+                    <div class="desc-center"></div>
+                </div>
+            </div>
+            <div class="center">
+                  <ul>
+                      <li><img src="" alt=""></li>
+                  </ul>
+            </div>
+        </li>
+    </ul>
+</div> -->
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/Lightbox.js"></script>
     <script src="js/TimeAxis.js"></script>
     <script>
     var data = [
-                            {"icon":"10","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
-                            {"icon":"11","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
-                            {"icon":"12","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
-                            {"icon":"13","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]},
-                            {"icon":"14","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"","desc":""}]}
+                            {"icon":"10","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"images/1.jpg","desc":""},{"src":"images/2.jpg","desc":""},{"src":"images/3.jpg","desc":""},{"src":"images/4.jpg","desc":""}]},
                         ];
     var timeAxis = new TimeAxis();
-    timeAxis.setPointTime(data);
+   timeAxis.setPointTime(data);
     </script>
 </body>
 

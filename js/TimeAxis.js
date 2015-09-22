@@ -1,4 +1,4 @@
-(function($) {
+;(function(window, $, lightbox) {
 
     var TimeAxis = function() {
         this.timeAxisObj = $('<div id="timeAxis"><ul></ul></div>');
@@ -36,14 +36,16 @@
         		$newPointTime.find("div.icon").text(n.icon);
         		$newPointTime.find("div.title").text(n.title);
         		$newPointTime.find("div.desc-center").text(n.desc);
+        		$newPointTime.find("div.center").append(lightbox.setImages(n.images));
         		$_temp.append($newPointTime);
         	});
-        	
+        	 _this.timeAxisObj.delegate('img', 'mouseover',lightbox.imgEoverEven);
+        	 _this.timeAxisObj.delegate('img', 'mouseout',lightbox.imgEoutEven);
+        	 _this.timeAxisObj.delegate('img', 'click',lightbox.imgClickEven);
 	_this.timeAxisObj.find("ul").append($_temp.html());
         }
-
     }
 
     window['TimeAxis'] = TimeAxis;
 
-})(jQuery);
+})(window, jQuery, lightbox);
