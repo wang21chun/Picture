@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<!--   <div id="timeAxis">
+    <!--   <div id="timeAxis">
     <ul>
         <li>
             <div class="time">
@@ -27,16 +27,65 @@
         </li>
     </ul>
 </div> -->
+<!--     <div class="lightbox-mask" />
+<div class="lightbox-img">
+    <div class="lightbox-left">
+        <div class="icon-left"></div>
+    </div>
+    <div class="lightbox-right">
+        <div class="icon-right"></div>
+    </div>
+    <div class="icon-load"></div>
+    <img src="images/1.jpg">
+</div> -->
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/Lightbox.js"></script>
     <script src="js/TimeAxis.js"></script>
     <script>
-    var data = [
-                            {"icon":"10","title":"2015-10-11", "desc":"Fist one", "images":[{"src":"images/1.jpg","desc":""},{"src":"images/2.jpg","desc":""},{"src":"images/3.jpg","desc":""},{"src":"images/4.jpg","desc":""}]},
-                        ];
+    var data = [{
+        "icon": "10",
+        "title": "2015-10-11",
+        "desc": "Fist one",
+        "images": [{
+            "src": "images/index.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P001.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P002.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P003.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P004.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P005.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P006.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P007.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P008.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P009.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P010.jpg",
+            "desc": ""
+        }, {
+            "src": "images/P011.jpg",
+            "desc": ""
+        }]
+    }, ];
     var timeAxis = new TimeAxis();
-   timeAxis.setPointTime(data);
-
+    timeAxis.setPointTime(data);
     </script>
 </body>
 

@@ -39,9 +39,9 @@
         		$newPointTime.find("div.center").append(lightbox.setImages(n.images));
         		$_temp.append($newPointTime);
         	});
-        	 _this.timeAxisObj.delegate('img', 'mouseover',lightbox.imgEoverEven);
-        	 _this.timeAxisObj.delegate('img', 'mouseout',lightbox.imgEoutEven);
-        	 _this.timeAxisObj.delegate('img', 'click',lightbox.imgClickEven);
+        	 _this.timeAxisObj.delegate('.center>ul>li', 'mouseover',lightbox.imgEoverEven);
+        	 _this.timeAxisObj.delegate('.center>ul>li', 'mouseout',lightbox.imgEoutEven);
+        	 _this.timeAxisObj.delegate('.center>ul>li>img', 'click',lightbox,lightbox.imgClickEven);
 	_this.timeAxisObj.find("ul").append($_temp.html());
         }
     }
