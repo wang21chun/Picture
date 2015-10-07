@@ -79,13 +79,11 @@ ul>li {
     display: block;
     overflow: hidden;
     width: auto;
-
 }
 .center ul li {
     margin: 0;
     padding: 0;
     position: absolute;
-
 }
 
 .center ul li img {

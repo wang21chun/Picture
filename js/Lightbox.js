@@ -58,10 +58,10 @@
 			var _w_h = _this._getWindowSize();
 			var img = new Image();
 			img.onload = function(){
-				var _ratio = _this._zoomRatio(_w_h.win_w-10, _w_h.win_h-10, this.width, this.height);
+				var _ratio = _this._zoomRatio(_w_h.win_w, _w_h.win_h-10, this.width, this.height);
 				var _w = this.width*_ratio;
 				var _h = this.height*_ratio;
-				var _left = (_w_h.win_w - _w -10 )/2;
+				var _left = (_w_h.win_w - _w )/2;
 				var _top = (_w_h.win_h - _h -10 )/2;
 				_this._show({"src":src, "width":_w, "height":_h,"left":_left,"top":_top});
 			}
