@@ -73,10 +73,19 @@ ul>li {
     position: relative;
 }
 
+.center ul{
+     position: relative;
+    height: 150px;
+    display: block;
+    overflow: hidden;
+    width: auto;
+
+}
 .center ul li {
     margin: 0;
     padding: 0;
     position: absolute;
+
 }
 
 .center ul li img {
@@ -95,7 +104,7 @@ ul>li {
     height: 100%;
     min-height: 100%;
     min-width: 100%;
-       background-color: rgba(255, 255, 255, 0.5 );
+    background-color: rgba(255, 255, 255, 0.5 );
     z-index: 994;
     display: none;
 }

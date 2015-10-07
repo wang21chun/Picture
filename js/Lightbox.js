@@ -61,14 +61,13 @@
 				var _ratio = _this._zoomRatio(_w_h.win_w-10, _w_h.win_h-10, this.width, this.height);
 				var _w = this.width*_ratio;
 				var _h = this.height*_ratio;
-				var _left = (_w_h.win_w -10 - _w )/2;
-				var _top = (_w_h.win_h-10 - _h)/2;
+				var _left = (_w_h.win_w - _w -10 )/2;
+				var _top = (_w_h.win_h - _h -10 )/2;
 				_this._show({"src":src, "width":_w, "height":_h,"left":_left,"top":_top});
 			}
 			img.src = src;
 		},
 		_next : function(){
-			
 			var _this = this;
 			if(_this.index >= _this.data.length - 1){
 				return false;
@@ -92,7 +91,7 @@
 			var $_this = $(this);
 			$_this.stop(true);
 			var _init_left = parseInt($_this.attr('data-left'));
-			if(_init_left > 100)
+			if(_init_left > 0)
 				$_this.animate({"left":_init_left+100});
 		},
 		imgEoutEven : function(event){
@@ -102,7 +101,7 @@
 			$_this.animate({"left":_init_left});
 		},
 		imgClickEven : function(event){
-			console.log(event);
+			
 			event.stopPropagation();
 			var _this = event.data;
 			var $_this = $(this);
@@ -122,7 +121,10 @@
 					next.push($(n).children().attr("src"));
 				})
 				_this.data = $.merge(prev,next);
+			}else{
+				_this.index = $.inArray(src,_this.data);
 			}
+
 		
 			
 			
@@ -134,7 +136,7 @@
 			var l = imgObjs.length;
 			$.each(imgObjs, function(i, n){
 				var el = _this._newElements();
-				var _left = (i*100)+5;
+				var _left = (i*100);
 				el.css({"left":_left, "z-index":l-i})
 				    .attr({"data-left":_left});
 				el.find('img').attr({"src":n.src, "width":"200px", "height":"150px"});
